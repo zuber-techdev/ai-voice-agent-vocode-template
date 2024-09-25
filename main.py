@@ -78,7 +78,8 @@ def get_assistant_instructions():
 # GPT4AllAgent and ChatAnthropicAgent.
 # Don't forget to set OPENAI_API_KEY!
 AGENT_CONFIG = ChatGPTAgentConfig(
-  initial_message=BaseMessage(text="Hello, who am I talking to?"),
+  model_name="gpt-3.5-turbo",
+  initial_message=BaseMessage(text="Hello, I am a virtual assistant of Yavapai Regional Medical Center"),
   prompt_preamble=get_assistant_instructions(),
   generate_responses=True,
 )
